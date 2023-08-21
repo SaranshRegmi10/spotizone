@@ -1,26 +1,30 @@
-import { useState,useEffect } from 'react'
-import React from 'react'
-import Category from '../Category'
+import React, { useEffect, useState } from 'react'
 import Productcard from '../Product-id'
+import Category from '../Category/index'
 
 const MyProduct = () => {
-  const [categories, setCategories] = useState([])
+  const [product, setProduct] = useState([])
+
   useEffect(() => {
-    const fetchcategory = async () => {
-      const response = await fetch("https://fakestoreapi.com/products/categories")
+    const fetchproducts = async () => {
+      const response = await fetch(`https://fakestoreapi.com/products`)
       const data = await response.json()
       console.log(data)
-      setCategories(data);
+      setProduct(data);
     }
-    fetchcategory()
+    fetchproducts()
   }, [])
-  if ((categories).length>0) return <div className="spinner-border" role="status">
-      <span className="visually-hidden">Loading...</span>
-    </div>
+
   return (
     <div>
-      <Category card={categories}/>
-      <Productcard/>
+      <Category />
+      {
+        product.length ?
+          <Productcard products={product} />
+          :
+          <div>
+          </div>
+      }
     </div>
   )
 }

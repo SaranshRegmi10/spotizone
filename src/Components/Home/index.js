@@ -3,6 +3,7 @@ import Hero from '../Hero'
 import Features from '../Features'
 import { useEffect, useState } from 'react'
 import Productcard from '../Product-id'
+import Category from "../Category/index"
 
 const Home = () => {
   const [products, setProduct] = useState([])
@@ -19,6 +20,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
+      <Category/>
       <h2 class="text-xs text-green-500 tracking-widest font-bold title-font mb-1">Products</h2>
       <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">New Arrivals</h1>
       {
