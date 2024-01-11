@@ -1,7 +1,9 @@
 import React from 'react'
+// import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 const Productcard = ({ products = [] }) => {
+    // const items=useSelector((items)=>state.)
     return (
         <div>
             <section class="text-gray-600 body-font">
