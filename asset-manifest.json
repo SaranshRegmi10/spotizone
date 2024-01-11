@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SaranshRegmi10/spotizone.git/static/css/main.47f4b275.css",
+    "main.js": "/SaranshRegmi10/spotizone.git/static/js/main.9de32700.js",
+    "static/js/787.5e359f1e.chunk.js": "/SaranshRegmi10/spotizone.git/static/js/787.5e359f1e.chunk.js",
+    "index.html": "/SaranshRegmi10/spotizone.git/index.html",
+    "main.47f4b275.css.map": "/SaranshRegmi10/spotizone.git/static/css/main.47f4b275.css.map",
+    "main.9de32700.js.map": "/SaranshRegmi10/spotizone.git/static/js/main.9de32700.js.map",
+    "787.5e359f1e.chunk.js.map": "/SaranshRegmi10/spotizone.git/static/js/787.5e359f1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47f4b275.css",
+    "static/js/main.9de32700.js"
+  ]
+}
